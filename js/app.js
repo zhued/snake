@@ -75,7 +75,7 @@ function startGame() {
 	endGame();
 	gameBoard.clearGameInfo();
 	
-	snake = new Snake(150,150);
+	snake = new Snake(80,80);
 	snake.onCrash(snakeCrashHandler,{xPos:400,yPos:400});
 	drawSnake();
 	gameExecutor = setInterval(move,gameSpeed);
